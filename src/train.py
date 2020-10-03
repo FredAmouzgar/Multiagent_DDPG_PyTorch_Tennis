@@ -1,10 +1,9 @@
-from collections import deque
 import numpy as np
 import torch
 from tqdm import tqdm
 
 
-def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=10000, max_t=200):
+def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=10000, train_mode=True):
     previous_score = 0.1
     scores_average_window = 100
     episode_scores = []  # list containing scores from each episode
@@ -12,11 +11,12 @@ def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=10000, max_t=
     brain_name = env.brain_names[0]
     goal_score = 1.0
 
+
     episode_loop = tqdm(range(1, n_episodes + 1), desc="Episode 0 | Avg Score: None", leave=False)  # First text to be shown on tqdm
 
     for _ in episode_loop:
         # reset the unity environment
-        env_info = env.reset(train_mode=True)[brain_name]
+        env_info = env.reset(train_mode=train_mode)[brain_name]
 
         # get initial state of the unity environment
         states = env_info.vector_observations
@@ -44,8 +44,9 @@ def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=10000, max_t=
             dones = env_info.local_done  # see if episode has finished for each unity agent in the environment
 
             # Send (S, A, R, S') info to the training agent for replay buffer (memory) and network updates
-            agent_1.step(states, actions_1, rewards[0], next_states, dones[0])
-            agent_2.step(states, actions_2, rewards[1], next_states, dones[1])
+            if train_mode:
+                agent_1.step(states, actions_1, rewards[0], next_states, dones[0])
+                agent_2.step(states, actions_2, rewards[1], next_states, dones[1])
 
             # set new states to current states for determining next actions
             states = next_states
