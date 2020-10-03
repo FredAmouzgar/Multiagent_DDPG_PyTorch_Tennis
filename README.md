@@ -71,7 +71,7 @@ You don't need to download the environments seperately, although they are availa
 For more information about the DDPG training algorithm and the training hyperparameters see the included `Report.md` file.
 
 ## A Smart Agent
-Here is a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
+Here is a reward plot acquired by the agent while learning. It surpasses +1 after around 4000 episodes.
 <p align="center">
     <img src="" width="600" height="300">
 </p>
