@@ -72,8 +72,9 @@ For more information about the DDPG training algorithm and the training hyperpar
 
 ## A Smart Agent
 Here is a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
-
-<img src="" width="600" height="300">
+<p align="center">
+    <img src="" width="600" height="300">
+</p>
 
 Look at it go:
 
