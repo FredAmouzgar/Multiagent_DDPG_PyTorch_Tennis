@@ -16,8 +16,10 @@ To test the code, after cloning the project, open the `Tennis.ipynb` notebook. I
 ### The Tennis Environment
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play
 
-<img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.jpeg" width="400" height="200">
-
+<p align="center">
+    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.jpeg" width="600" height="300">
+</p>
+    
 ### Multiagent Traning
 The Tennis environment contains two unity agents. Each agent needs to collects observations from itself and its co-player. The task is essentially a cooperative task in that both agents maximize reward by hitting the ball back and forth for as long as possible.
 
@@ -71,8 +73,10 @@ For more information about the DDPG training algorithm and the training hyperpar
 ## A Smart Agent
 Here is a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
 
-<img src="" width="400" height="200">
+<img src="" width="600" height="300">
 
 Look at it go:
 
-<img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.gif" width="400" height="200">
+<p align="center">
+    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.gif" width="600" height="300">
+</p>
