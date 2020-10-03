@@ -25,7 +25,7 @@ DDPG, as represented in Figure 1, executes a typical reinforcement learning algo
 In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01. Thus, the goal of each agent is to keep the ball in play
 
 <p align="center">
-    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.jpeg" width="400" height="200">
+    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.jpeg" width="600" height="300">
     <p align="center" style="font-size=70%;">Figure 2: The Tennis Environment</p>
 </p>
 
@@ -48,13 +48,13 @@ To test the code, after cloning the project, open the `Tennis.ipynb` notebook. I
 Figure 3 is depicted a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
 
 <p align="center">
-    <img src="" width="400" height="200"><br><p align="center" style="font-size=70%;">Figure 3: The average reward during training</p>
+    <img src="" width="600" height="300"><br><p align="center" style="font-size=70%;">Figure 3: The average reward during training</p>
 </p>
 
 Figure 4 shows one episode after training.
 
 <p align="center">
-    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.gif" width="400" height="200"><br>
+    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/Tennis.gif" width="600" height="300"><br>
     <p align="center" style="font-size=70%;">Figure 4: A Trained Agent</p>
 </p>
 
