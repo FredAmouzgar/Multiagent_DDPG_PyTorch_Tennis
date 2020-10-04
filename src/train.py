@@ -3,7 +3,7 @@ import torch
 from tqdm import tqdm
 
 
-def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=10000, train_mode=True):
+def train_multiagent(agent_1, agent_2, env, num_agents, n_episodes=5000, train_mode=True):
     previous_score = 0.1
     scores_average_window = 100
     episode_scores = []  # list containing scores from each episode
