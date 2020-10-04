@@ -48,7 +48,7 @@ To test the code, after cloning the project, open the `Tennis.ipynb` notebook. I
 Figure 3 is depicted a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
 
 <p align="center">
-    <img src="" width="600" height="300"><br><p align="center" style="font-size=70%;">Figure 3: The average reward during training</p>
+    <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/rewards.jpeg" width="600" height="300"><br><p align="center" style="font-size=70%;">Figure 3: The average reward during training</p>
 </p>
 
 Figure 4 shows one episode after training.
