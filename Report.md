@@ -45,7 +45,7 @@ This repository consists of these files:
 
 To test the code, after cloning the project, open the `Tennis.ipynb` notebook. It has all the necessary steps to install and load the packages, and train and test the agent. It also automatically detects the operating system, and loads the corresponding environment. There are two pairs of already trained agents stored in `checkpoint-actor.pth` and `checkpoint-critic.pth`, by running the last part of the notebook, their performance can be directly tested.
 
-Figure 3 is depicted a reward plot acquired by the agent while learning. It surpasses +33 after around 125 episodes.
+Figure 3 is depicted a reward plot acquired by the agent while learning. It surpasses the +2 average reward (past 100 episodes) at around 4000 episodes training.
 
 <p align="center">
     <img src="https://github.com/FredAmouzgar/Multiagent_DDPG_PyTorch_Tennis/raw/master/images/rewards.jpeg" width="600" height="300"><br><p align="center" style="font-size=70%;">Figure 3: The average reward during training</p>
